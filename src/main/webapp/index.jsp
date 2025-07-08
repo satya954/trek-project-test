@@ -6,6 +6,6 @@
 </head>
 <body>
     <h1>Explore the Adventure of Trekking</h1>
-    <img src="images/trekking.jpg" alt="Trekking" style="width:80%;height:auto;"/>
+    <img src="images/trekking-1.jpg" alt="Trekking" style="width:auto;height:auto;"/>
 </body>
 </html>
