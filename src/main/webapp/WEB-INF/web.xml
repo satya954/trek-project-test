@@ -3,6 +3,7 @@
         <filter-name>ImageFilter</filter-name>
         <filter-class>com.example.trekking.ImageFilter</filter-class>
     </filter>
+
     <filter-mapping>
         <filter-name>ImageFilter</filter-name>
         <url-pattern>/*</url-pattern>
@@ -12,12 +13,34 @@
         <servlet-name>TrekkingServlet</servlet-name>
         <servlet-class>com.example.trekking.TrekkingServlet</servlet-class>
     </servlet>
+
     <servlet-mapping>
         <servlet-name>TrekkingServlet</servlet-name>
         <url-pattern>/home</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+    	<servlet-name>TrekFormServlet</servlet-name>
+    	<servlet-class>com.example.trekking.TrekFormServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    	<servlet-name>TrekFormServlet</servlet-name>
+    	<url-pattern>/submitForm</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+    	<servlet-name>ViewRegistrationsServlet</servlet-name>
+    	<servlet-class>com.example.trekking.ViewRegistrationsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    	<servlet-name>ViewRegistrationsServlet</servlet-name>
+    	<url-pattern>/viewRegistrations</url-pattern>
+    </servlet-mapping>
+
     <welcome-file-list>
         <welcome-file>home</welcome-file>
     </welcome-file-list>
+
 </web-app>

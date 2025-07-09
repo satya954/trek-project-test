@@ -10,8 +10,9 @@
     <nav>
         <a href="home">Home</a> |
         <a href="about.jsp">About</a> |
-        <a href="contact.jsp">Contact</a>
-	<a href="register.jsp">Register</a>
+        <a href="contact.jsp">Contact</a> |
+	<a href="register.jsp">Register</a> |
+	<a href="viewRegistrations">View All Registrations</a>
     </nav>
     <h1>Explore the Adventure of Trekking</h1>
     <img src="<c:out value='${selectedImage}'/>" alt="Trekking" />
