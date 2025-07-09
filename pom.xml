@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.example</groupId>
-    <artifactId>sample-trekking-site</artifactId>
+    <artifactId>trekking</artifactId>
     <version>1.0.0</version>
     <packaging>war</packaging>
 
-    <name>Sample Trekking Site</name>
+    <name>Trekking Site</name>
 
     <dependencies>
         <dependency>
@@ -17,7 +17,6 @@
             <version>4.0.1</version>
             <scope>provided</scope>
         </dependency>
-
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>javax.servlet.jsp.jstl-api</artifactId>
@@ -31,7 +30,7 @@
     </dependencies>
 
     <build>
-        <finalName>sample-trekking-site</finalName>
+        <finalName>trekking</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -42,7 +41,6 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
