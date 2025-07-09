@@ -11,7 +11,6 @@
     <name>Sample Trekking Site</name>
 
     <dependencies>
-        <!-- Java EE 8 Servlet API -->
         <dependency>
             <groupId>javax.servlet</groupId>
             <artifactId>javax.servlet-api</artifactId>
@@ -19,7 +18,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <!-- JSTL support -->
         <dependency>
             <groupId>javax.servlet.jsp.jstl</groupId>
             <artifactId>javax.servlet.jsp.jstl-api</artifactId>
@@ -35,7 +33,6 @@
     <build>
         <finalName>sample-trekking-site</finalName>
         <plugins>
-            <!-- Required for Java 8 compilation -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -54,4 +51,3 @@
         </plugins>
     </build>
 </project>
-

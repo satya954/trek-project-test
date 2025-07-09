@@ -1,21 +1,16 @@
 package com.example.trekking;
 
-import java.io.*;
-import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
+import java.io.*;
+import java.util.*;
 
 public class TrekkingServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String contextPath = request.getContextPath();
-        String[] images = {
-            contextPath + "/images/trekking1.jpg",
-            contextPath + "/images/trekking2.jpg",
-            contextPath + "/images/trekking3.jpg"
-        };
+        List<String> images = (List<String>) getServletContext().getAttribute("trekImages");
         Random rand = new Random();
-        String selectedImage = images[rand.nextInt(images.length)];
+        String selectedImage = images.get(rand.nextInt(images.size()));
         request.setAttribute("selectedImage", selectedImage);
         request.getRequestDispatcher("/index.jsp").forward(request, response);
     }
