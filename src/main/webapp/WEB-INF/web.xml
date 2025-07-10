@@ -20,16 +20,6 @@
     </servlet-mapping>
 
     <servlet>
-    	<servlet-name>TrekFormServlet</servlet-name>
-    	<servlet-class>com.example.trekking.TrekFormServlet</servlet-class>
-    </servlet>
-
-    <servlet-mapping>
-    	<servlet-name>TrekFormServlet</servlet-name>
-    	<url-pattern>/submitForm</url-pattern>
-    </servlet-mapping>
-
-    <servlet>
     	<servlet-name>ViewRegistrationsServlet</servlet-name>
     	<servlet-class>com.example.trekking.ViewRegistrationsServlet</servlet-class>
     </servlet>
@@ -38,6 +28,17 @@
     	<servlet-name>ViewRegistrationsServlet</servlet-name>
     	<url-pattern>/viewRegistrations</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+    	<servlet-name>SubmitFormServlet</servlet-name>
+    	<servlet-class>com.example.trekking.SubmitFormServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+    	<servlet-name>SubmitFormServlet</servlet-name>
+    	<url-pattern>/submitForm</url-pattern>
+    </servlet-mapping>
+
 
     <welcome-file-list>
         <welcome-file>home</welcome-file>
