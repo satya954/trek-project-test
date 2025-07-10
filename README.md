@@ -13,3 +13,9 @@ Copy the generated `target/sample-trekking-site.war` into your Tomcat's `webapps
 
 ## Upload to Nexus (Optional)
 Use the Maven deploy plugin or your organization's CI/CD tool to push the WAR to Nexus.
+
+## Update the Mysql DB credentials in src/main/resources/db.properties file
+db.url=jdbc:mysql://192.168.1.48:3306/trekkingdb
+db.username=trek-mysql
+db.password=P@ssw0rd
+
